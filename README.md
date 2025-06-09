@@ -1,12 +1,14 @@
 # Portfolio Website
 
+A personal portfolio website showcasing my professional experience, projects, and skills as a Statistician and Developer.
+
 ## Author Information: 
 - Carlos Arturo Rojas Bolaños
 - Clan Gosling
 - CC 1105793265
 - Email: caarojasbo@unal.edu.co
 
-A personal portfolio website showcasing my professional experience, projects, and skills as a Statistician and Developer.
+
 
 ## 📁 Project Structure
 ```bash

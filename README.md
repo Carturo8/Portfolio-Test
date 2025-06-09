@@ -4,9 +4,20 @@ A personal portfolio website showcasing my professional experience, projects, an
 
 ## 📁 Project Structure
 ```bash
-portfolio/
-├── index.html
-└── styles.css
+project-root/ │
+├── index.html # Main HTML file
+├── styles.css # Main stylesheet
+├── README.md # Project documentation │
+pages/ # HTML pages │
+├── projects.html # Projects section HTML file
+├── contact.html # Contact section HTML file
+img/ # Image assets │
+└── profile_photo.jpg # Profile picture │
+└── project_1.jpg # Project 1 image │
+└── project_2.jpg # Project 2 image │
+└── project_3.jpg # Project 3 image │
+└── project_4.jpg # Project 4 image │
+
 ```
 
 ## 🚀 Features

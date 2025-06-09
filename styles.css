@@ -389,3 +389,41 @@ ul {list-style: none;}
     border-top: 2px solid var(--white);
 }
 
+/* ====================
+        Responsive
+==================== */
+@media (max-width: 768px) {
+
+    .bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .navigation {
+        padding: 1rem 0;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .skills-list {
+        flex-direction: column;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .contact iframe {
+        width: 100%;
+        height: 30rem;
+    }
+}

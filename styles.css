@@ -11,7 +11,7 @@
     --black: #000;
 }
 
-/* Reset margins and paddings */
+/* === Reset margins and paddings === */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /* 1rem = 10px for easier rem scaling */
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
@@ -71,20 +71,18 @@ ul {list-style: none;}
     text-align: center;
 }
 
+.padding_2 {padding: 2rem 0;}
+.padding_5 {padding: 5rem 0;}
+.margin_bot_2 {margin-bottom: 2rem;}
+
 /* ====================
     Layout Containers
 ==================== */
 
-.container_1, .container_2 {
+.container {
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
-}
-
-.container_2 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 5rem;
 }
 
 /* ====================
@@ -97,7 +95,7 @@ ul {list-style: none;}
     border-bottom: 2px solid var(--white);
 }
 
-/* Bar */
+/* === Bar === */
 .bar {
     display: flex;
     justify-content: space-between;
@@ -112,24 +110,29 @@ ul {list-style: none;}
     transition: all 0.2s ease-in-out;
 }
 
-/* Logo */
+/* === Logo === */
 .logo {
     text-transform: uppercase;
 }
 
-.logo h3 {
-    font-size: 2.5rem;
+.logo-title {
+    font-size: 3rem;
     letter-spacing: 0.2rem;
 }
 
-/* Navigation */
+/* === Navigation === */
 .navigation {font-size: 2rem;}
 .navigation a {padding: 0 3rem;}
 
-/* Title */
-.title {
-    padding-bottom: 5rem;
+/* === Title === */
+.title {padding-bottom: 5rem;}
+
+.title p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
 }
+
 
 /* ====================
         Main
@@ -146,20 +149,14 @@ ul {list-style: none;}
     margin-top: 10rem;
 }
 
-/* Photo */
+/* === Photo === */
 .about-me-photo {
     width: 100%;
-    padding: 2rem 0;
 }
 
-/* Text */
+/* === Text === */
 .about-me-text {
     line-height: 1.8;
-    padding: 2rem 0;
-}
-
-.about-me-text p {
-    margin-bottom: 2rem;
 }
 
 .about-me-text h2, .about-me-skills h3, .social-links h4 {
@@ -173,14 +170,13 @@ ul {list-style: none;}
     text-align: justify;
 }
 
-/* Social Links */
+/* === Social Links === */
 .social-links {
     display: flex;
     grid-column: 1/2;
     grid-row: 2/3;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 0;
     border: 3px solid var(--primary);
     border-radius: 20px;
 }
@@ -197,7 +193,7 @@ ul {list-style: none;}
 
 .social-links a:hover {
     color: var(--white);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .social-links i {
@@ -208,10 +204,10 @@ ul {list-style: none;}
 
 .social-links i:hover {
     color: var(--primary);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Skills */
+/* === Skills === */
 .about-me-skills {
     grid-column: 2/2;
     grid-row: 2/4;
@@ -222,7 +218,6 @@ ul {list-style: none;}
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 2rem 0;
 }
 
 .skills-list ul li {
@@ -240,12 +235,186 @@ ul {list-style: none;}
 /* ====================
    My Projects Section
 ==================== */
+.projects {
+    margin: 7rem 0;
+}
 
+.projects-title {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: var(--primary);
+}
 
+/* === Projects Table === */
+.table {
+    border-radius: 2px;
+    border-collapse: collapse;
+    font-size: 2rem;
+    background-color: var(--black);
+    color: var(--light);
+    overflow: hidden;
+}
 
+.table th,
+.table td {
+    padding: 1rem;
+    text-align: center;
+    border: 3px solid var(--light);
+}
+
+.table th {
+    background-color: var(--primary);
+    color: var(--black);
+    font-weight: bold;
+}
+
+.table a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.table a:hover {
+    text-decoration: underline;
+    color: var(--white);
+    transition: all 0.2s ease-in-out;
+}
+
+/* === Subprojects === */
+.subproject {
+    border: 3px solid var(--primary);
+    padding: 2rem;
+}
+
+.subproject h3 {
+    text-align: center;
+    color: var(--primary);
+}
+
+.subproject img {
+    width: auto;
+}
+
+.subproject img:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+    border: 3px solid var(--white)
+}
+
+.subproject-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+    text-align: justify;
+}
 
 /* ====================
-   Footer
+      Contact Section
+==================== */
+.contact-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #000;
+    color: #f5f5f5;
+}
+
+/* === Contact === */
+.contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    padding: 0 15rem;
+    align-items: start;
+}
+
+/* === Contact Information === */
+.contact-information {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.contact-information address {
+    margin: 0 auto 2rem auto;
+}
+
+.contact-information address ul li {
+    margin: 1.5rem 0;
+}
+
+.contact-information address ul li i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    color: #d4af37;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto 0 auto;
+    gap: 1.5rem;
+}
+
+.contact-links a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-links i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.contact-text {
+    text-align: justify;
+    margin: 0.5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    display: flex;
+}
+
+/* === Contact Form === */
+.form-container {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-container input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+}
+
+.form-container button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: #d4af37;
+    color: #000;
+    cursor: pointer;
+}
+
+.form-container button[type="submit"]:hover {
+    color: #f5f5f5;
+}
+
+/* ====================
+        Footer
 ==================== */
 
 .footer {

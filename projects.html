@@ -17,20 +17,20 @@
          Header Section
     ======================= -->
     <header class="header">
-        <div class="container_1">
+        <div class="container">
 
             <!-- Bar Section -->
             <div class="bar">
 
                 <!-- Logo -->
-                <a class="logo" href="#" >
-                    <h3>Portfolio C.R.</h3>
+                <a class="logo" href="index.html" >
+                    <h3 class="logo-title">Portfolio C.R.</h3>
                 </a>
 
                 <!-- Navigation -->
                 <nav class="navigation">
                     <a href="index.html">About Me</a>
-                    <a href="projects.html">My Projects</a>
+                    <a href="projects.html">Projects</a>
                     <a href="contact.html">Contact</a>
                 </nav>
             </div>
@@ -47,21 +47,109 @@
              Main Section
         ======================= -->
     <main>
-        <div class="container_1">
-            <!-- My Projects Section -->
-            <section id="my-projects">
-                <h2>My Projects</h2>
+        <div class="container">
+            <!-- Projects Section -->
+            <section id="projects" class="projects center-column-div">
+                <h2 class="projects-title"><samp>My Projects</samp></h2>
 
-                <article>
-                    <h3>Project 1</h3>
+                <!-- Projects Table -->
+                <div class="padding_5">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Technology Used</th>
+                            <th>Link</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Inventory Management Program</td>
+                            <td>Python</td>
+                            <td><a href="https://github.com/Carturo8/Inventory-Management" target="_blank">View Project</a></td>
+                        </tr>
+                        <tr>
+                            <td>Flight Booking System</td>
+                            <td>Python</td>
+                            <td><a href="https://github.com/Carturo8/Flight-Booking-System" target="_blank">View Project</a></td>
+                        </tr>
+                        <tr>
+                            <td>Portfolio Website</td>
+                            <td>HTML, CSS</td>
+                            <td><a href="https://github.com/Carturo8/Portfolio" target="_blank">View Project</a></td>
+                        </tr>
+                        <tr>
+                            <td>Figma Challenge</td>
+                            <td>HTML, CSS</td>
+                            <td><a href="https://github.com/Carturo8/Figma-Challenge" target="_blank">View Project</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Project 1 -->
+                <article class="subproject">
+                    <h3>Inventory Management Program</h3>
+                    <div class="subproject-image padding_2">
+                        <picture>
+                            <img src="./img/project_1.jpg" alt="Project: Inventory Management Program<">
+                        </picture>
+                    </div>
+                    <div class="subproject-description">
+                        <p>
+                            This is a simple inventory management program that allows the user to add, remove, and update items in a database.
+                            The program is written in Python.
+                        </p>
+                    </div>
                 </article>
 
-                <article>
-                    <h3>Project 2</h3>
+                <!-- Project 2 -->
+                <article class="subproject">
+                    <h3>Flight Booking System</h3>
+                    <div class="subproject-image padding_2">
+                        <picture>
+                            <img src="./img/project_2.png" alt="Project: Flight Booking System<">
+                        </picture>
+                    </div>
+                    <div class="subproject-description">
+                        <p>
+                            This is a flight booking system that allows the user to book flights and view their flight history.
+                            The program is written in Python.
+                        </p>
+                    </div>
                 </article>
 
-                <article>
-                    <h3>Project 3</h3>
+                <!-- Project 3 -->
+                <article class="subproject">
+                    <h3>Portfolio Website</h3>
+                    <div class="subproject-image padding_2">
+                        <picture>
+                            <img src="./img/project_3.png" alt="Project: Portfolio Website<">
+                        </picture>
+                    </div>
+                    <div class="subproject-description">
+                        <p>
+                            This is my personal portfolio website.
+                            It is a static website that I created using HTML and CSS.
+                            It is hosted on GitHub Pages.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="subproject">
+                    <h3>Figma Challenge</h3>
+                    <div class="subproject-image padding_2">
+                        <picture>
+                            <img src="./img/project_4.png" alt="Project: Figma Challenge<">
+                        </picture>
+                    </div>
+                    <div class="subproject-description">
+                        <p>
+                            This is a simple Figma challenge that I created to practice my HTML and CSS skills.
+                            It is hosted on GitHub Pages.
+                        </p>
+                    </div>
                 </article>
             </section>
         </div>
@@ -71,7 +159,7 @@
          Footer Section
     ======================= -->
     <footer class="footer center-column-div">
-        <div class="container_1">
+        <div class="container">
             &copy; 2025 Carlos Rojas. All rights reserved.
         </div>
     </footer>

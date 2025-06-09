@@ -18,8 +18,10 @@
     ======================= -->
     <header class="header">
         <div class="container_1">
+
             <!-- Bar Section -->
-            <div class="header-bar">
+            <div class="bar">
+
                 <!-- Logo -->
                 <a class="logo" href="#" >
                     <h3>Portfolio C.R.</h3>
@@ -28,14 +30,13 @@
                 <!-- Navigation -->
                 <nav class="navigation">
                     <a href="#about-me">About Me</a>
-                    <a href="#my-projects">My Projects</a>
-                    <a href="#contact">Contact</a>
+                    <a href="projects.html">My Projects</a>
+                    <a href="contact.html">Contact</a>
                 </nav>
             </div>
 
-
             <!-- Title Section -->
-            <div class="center-column-div">
+            <div class="title center-column-div">
                 <h1>Carlos Arturo Rojas Bolaños</h1>
                 <p>Statistician & Riwi Developer</p>
             </div>
@@ -47,30 +48,58 @@
         ======================= -->
     <main>
         <div class="container_1">
+
             <!-- About Me Section -->
             <section id="about-me" class="about-me">
+
                 <!-- Photo -->
-                <div class="about-me-photo">
-                    <picture>
-                        <img src="./img/profile_photo.jpg" alt="Profile photo">
-                    </picture>
-                </div>
+                <picture class="about-me-photo">
+                    <img src="./img/profile_photo.jpg" alt="Profile photo">
+                </picture>
 
                 <!-- Information -->
-                <div class="about-me-text">
+                <div class="about-me-text center-column-div">
                     <h2>About Me</h2>
                     <p>
-                        I'm Carlos, a Statistics professional specializing in Analytics,
-                        now training as a software developer at Riwi. I aim to blend data analysis
-                        with programming to build innovative tech solutions and keep growing through
-                        new challenges.
+                        I'm Carlos, a Statistician passionate about the intersection of data science and software development.
+                        With a strong foundation in statistical analysis and experience in Python for Machine Learning,
+                        I'm currently expanding my horizons as a full-stack developer at Riwi,
+                        where I'm mastering JavaScript and its modern technologies.
+                    </p>
+                    <p>
+                        My unique combination of statistics and programming skills allows me to approach
+                        problems from multiple perspectives, whether developing predictive models,
+                        creating interactive data visualizations, or building robust web applications.
+                        I constantly seek opportunities to merge the power of data analysis with
+                        innovative technological solutions.
                     </p>
                 </div>
 
+                <!-- Social Links -->
+                <div class="social-links">
+                    <h4>Social Links</h4>
+                    <a href="https://github.com/Carturo8" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://co.linkedin.com/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                    <a href="https://www.discord.com/" target="_blank">
+                        <i class="fab fa-discord"></i> Discord
+                    </a>
+                </div>
+
+                <!-- Skills -->
                 <div class="about-me-skills">
-                    <h3>Technical Skills</h3>
-                    <!-- Technical skills -->
-                    <div class="skills">
+                    <h3>Skills</h3>
+
+                    <div class="skills-list">
                         <ul>
                             <li><i class="fab fa-python"></i>Python</li>
                             <li><i class="fab fa-r-project"></i>R</li>
@@ -86,59 +115,13 @@
                     </div>
                 </div>
             </section>
-
-            <!-- My Projects Section -->
-            <section id="my-projects">
-                <h2>My Projects</h2>
-
-                <article>
-                    <h3>Project 1</h3>
-                </article>
-
-                <article>
-                    <h3>Project 2</h3>
-                </article>
-
-                <article>
-                    <h3>Project 3</h3>
-                </article>
-            </section>
-
-            <!-- Contact Section -->
-            <section id="contact">
-                <h2>Contact</h2>
-
-                <!-- Contact Information -->
-                <div>
-                    <address>
-                        <ul>
-                            <li><i class="fas fa-envelope"></i> Email: caarojasbo@unal.edu.co</li>
-                            <li><i class="fas fa-phone"></i> Phone: +57 312 405 2318</li>
-                            <li><i class="fas fa-map-marker-alt"></i> Location: Medellín, Colombia</li>
-                        </ul>
-                    </address>
-                </div>
-
-                <!-- Contact Form -->
-                <form action="#" method="POST">
-                    <label for="name"></label>
-                    <input id="name" type="text" placeholder="Name" required>
-                    <label for="email"></label>
-                    <input id="email" type="email" placeholder="Email" required>
-                    <label for="subject"></label>
-                    <input id="subject" type="text" placeholder="Subject" required>
-                    <label for="message"></label>
-                    <textarea id="message" rows="4" placeholder="Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
         </div>
     </main>
 
     <!-- =====================
          Footer Section
     ======================= -->
-    <footer>
+    <footer class="footer center-column-div">
         <div class="container_1">
             &copy; 2025 Carlos Rojas. All rights reserved.
         </div>

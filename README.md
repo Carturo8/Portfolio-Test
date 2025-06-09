@@ -35,7 +35,7 @@ project-root/
 
 - Responsive design with mobile-first approach
 - Interactive navigation menu
-- Sections for About Me, Work Experience, Education, Projects, and Contact
+- Sections for About Me, Projects, and Contact
 - Skills visualization with icons
 - Contact form
 - Social media integration
